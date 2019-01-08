@@ -1,5 +1,5 @@
 {% set name = "dbxfs" %}
-{% set version = "1.0.41" %}
+{% set version = "1.0.42" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9ded2eac1dd6c9ad41d79204d56d1e9c76a2665f616edfa546138a1279e76905
+  sha256: 53f92e3d5974962c78bdde0659f2f1e44567b6385ca867a098d9af6755d5d6df
 
 build:
   noarch: python
