@@ -5,9 +5,11 @@ Home: https://github.com/rianhunter/dbxfs
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dbxfs-feedstock/blob/master/LICENSE.txt)
 
 Summary: User-space file system for Dropbox
+
+Development: https://github.com/rianhunter/dbxfs
 
 dbxfs allows you to mount your Dropbox folder as if it were a local
 filesystem. It differs from the official Dropbox client in two main ways:
