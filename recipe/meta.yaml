@@ -1,5 +1,5 @@
 {% set name = "dbxfs" %}
-{% set version = "1.0.43" %}
+{% set version = "1.0.44" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7a1a21eadf1db674555c994f523bcd5537e95c532ce7af79ecad04d195f03ab9
+  sha256: a98e58879c44a75de304c06e6ae15739ffeb5fbee74d8128426ce2d4f4535017
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  script: {{ PYTHON }} -m pip install . -vvv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'User-space file system for Dropbox'
+  summary: User-space file system for Dropbox
   description: |
     dbxfs allows you to mount your Dropbox folder as if it were a local
     filesystem. It differs from the official Dropbox client in two main ways:
